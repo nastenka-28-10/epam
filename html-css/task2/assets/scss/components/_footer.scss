@@ -1,0 +1,244 @@
+.first_footer{
+    width:100%;
+    background-color: #f3f1f2;
+    text-align: center;
+    &-bold_text{
+        margin-top:2%;
+        display: inline-block;
+        font-size: 22px;
+        color: rgb(86, 99, 117);
+        line-height: 2.182;
+        font-weight: 500;
+    }
+    &-text{
+        font-size: 16px;
+        color: rgb(150, 166, 167);
+        line-height: 1.25;
+    }
+    
+    &-img_links{
+        display:inline-flex;
+        margin-top: 3%;
+        justify-content: center;
+        width:50%;
+        &-hr{
+            display:inline-block;
+            width:8%;
+            color:#e2dee0;
+            background-color: #e2dee0;
+            border:none;
+            height:1px;
+            margin-top:44px;
+            margin-left: 0;
+            margin-right: 0;
+            @media only screen and (min-width: 1024px) and (max-width: 1171px){
+                margin-top:32px;
+            }
+            @include respond-to(medium-screens){
+                margin-top:23px;
+            }
+            @include respond-to(handhelds){
+                margin-top:23px;
+            }
+        }
+        @include respond-to(handhelds){
+            width:80%;
+        }
+        @include respond-to(medium-screens){
+            width:80%;
+        }
+        &-item{
+            &-link{
+                img{
+                    width:90x;
+                    height:90px;
+                    @media only screen and (min-width: 1024px) and (max-width: 1171px){
+                        width:65px;
+                        height:65px;
+                    }
+                    @include respond-to(medium-screens){
+                        width:47px;
+                        height:47px;
+                    }
+                    @include respond-to(handhelds){
+                        width:47px;
+                        height:47px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    &-offers{
+        text-align: center;
+        &-heading{
+            margin-top: 1%;
+            display: inline-block;
+            font-size: 24px;
+            color: rgb(27, 175, 93);
+            line-height: 1.25;
+         }  
+        &-wrapper{
+            margin-top: 1%;
+            padding-bottom:7%;
+            
+            &-left, &-right{
+                display: inline-block;
+                width:20vw;
+                @include respond-to(medium-screens){
+                    width:40vw;
+                }
+                @include respond-to(handhelds){
+                    display:block;
+                    width:80vw;
+                    margin-left:18%;
+                    margin-top:2%;
+                }
+                
+            }
+             
+            &-icon{
+                display: inline-block;
+                float:left;
+                img{
+                   @include respond-to(medium-screens){
+                        width:47px;
+                        height:47px;
+                    } 
+                    @include respond-to(handhelds){
+                        width:47px;
+                        height:47px;
+                    }
+                }
+                
+            }
+            
+            &-text{
+                display: inline-block;
+                float:left;
+                text-align: justify;
+                font-size: 14px;
+                color: rgb(86, 99, 117);
+                line-height: 1.714;
+                text-align: left;
+                padding-left:4%;
+                width:65%;
+            }
+        }
+    }
+}
+
+.second_footer{
+    background-image: url("../img/footer/back.png");
+    background-size: cover;
+    background-position:center;
+    height:690px;
+    width:100%;
+    text-align: center;
+    z-index: 1;
+    &-heading_text{
+        color:white;
+        padding-top:4%;
+        font-size: 24px;
+        line-height: 1.25;
+        text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);    
+    }
+    &-wrapper_form{
+        margin-top:3%;
+        display: flex;
+        justify-content: center;
+        &-input{
+  
+        }
+        &-butt{
+            line-height: 2;
+            padding: 9px 10px;
+            @include respond-to(handhelds){
+                margin-top:1vh;
+            }
+        }
+        @include respond-to(handhelds){
+            display: block;
+        }
+    }
+    &-hr{
+        margin:10vh 13vw;
+        height:1px;
+        color:#535350;
+        background-color:#535350;
+        border:none;
+        z-index: 15;
+        @include respond-to(handhelds){
+            margin:5vh 13vw;
+        }
+        @include respond-to(medium-screens){
+            margin:8vh 13vw;
+        }
+    }
+    &-information_wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding:0 13vw;
+        text-align: left;
+        &-heading{
+                font-size: 16px;
+                color: rgb(255, 255, 255);
+                text-decoration: underline;
+                line-height: 1.5;
+            }
+        &-text1{
+            display:inline-block;
+            &-links{
+                &-item{
+                    
+                }
+                &-link, &-link:visited, &-link:link{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: rgb(192, 190, 188);
+                    line-height: 1.714;                                     
+                }
+                &-link:hover{
+                    text-decoration: underline;
+                }
+            }
+            @include respond-to(handhelds){
+                
+            }
+        }
+        &-text2{
+            position: relative;
+            width:19vw;
+            &-wrapperlinks{
+                display:flex;
+                align-items: center;
+                justify-content:flex-start;
+                &-div{
+                    margin-right: 0.7vw;
+                }
+            }
+            &-copyright{
+                position: absolute;
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+                line-height: 1.714;
+                bottom:0;
+                @include respond-to(handhelds){
+                    position: static;
+                }
+            }
+        }
+        @include respond-to(handhelds){
+            position:static;
+            overflow: visible;
+        }
+    }
+    @include respond-to(handhelds){
+      height:419px;      
+    }
+    @include respond-to(medium-screens){
+      height:490px;      
+    }
+}
+

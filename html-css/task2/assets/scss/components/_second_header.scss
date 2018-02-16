@@ -1,0 +1,177 @@
+.second_header{
+    background-color: white;
+    height:60px;
+    border-bottom:1px solid #e2dee0;
+    @include respond-to(medium-screens){
+        height:155px;
+    }
+    
+    @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+      height:155px;  
+    }
+    
+    @include respond-to(handhelds){           
+        height:170px;
+    }
+        
+    &-container{
+        height: inherit;
+        margin-left:13vw;
+        margin-right: 13vw;
+        position: relative;
+        @include respond-to(medium-screens){           
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @include respond-to(handhelds){        
+            margin-left: 0;
+            margin-right: 0;
+        }
+    } 
+    &-links{
+        display:inline-flex;
+        justify-content: space-around;
+        float:left;
+        &-item{
+            margin-right:1.7vw;
+            padding-top:4px;
+            @include respond-to(medium-screens){
+                margin-right: 0;
+            }
+            @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+                margin-right: 4%;      
+            }
+            &-link{
+                color: #96a6a7;
+                font-size: 14px;
+                line-height: 4;
+                text-transform: uppercase;
+            }
+            &-link:focus{
+                color: #e94e38;
+                         
+            }
+        }
+        @include respond-to(medium-screens){
+            width:100vw;        
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+            width:100vw;
+            justify-content: center;
+            
+        }
+        @include respond-to(handhelds){
+            width:100vw;
+        }
+        
+    }
+    &-butt{
+        display: inline-flex;
+        align-items: center;
+        @include centerer(true, true);
+        @include respond-to(medium-screens){
+            top:76px;     
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+            top:76px;   
+        }
+        @include respond-to(handhelds){           
+            top:80px;
+        }
+        
+        
+    }
+    &-butt select{
+        border-radius:32px;
+        background-color: white;
+        color: #96a6a7;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        font-size: 14px;
+        line-height: 4;
+        margin-right: 6%;
+        @include respond-to(medium-screens){
+            padding:6px 18px;
+            width:179px;
+            margin-top: 1%;   
+            font-size:14px;
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+            padding:6px 18px;
+            width:179px;
+            margin-top: 1%;   
+            font-size:14px;  
+        }
+        @include respond-to(handhelds){
+            width:149px;        
+        }
+    }
+    &-butt option{
+        background-color: #e94e38;
+        color:white;
+    }
+    
+    &-butt select:active, &-butt select:focus{
+      outline:none;
+    }
+    &-img_links{
+        width:300px;
+        float:right;
+        display:inline-flex;
+        align-items: center;
+        color: rgb(150, 166, 167);
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 4;
+        &-label{
+            padding-bottom:10px;
+            @include respond-to(medium-screens){
+                width:auto;
+                font-size: 14px;
+            }
+            @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+                width:auto;
+                font-size: 14px;  
+            }
+        }
+        &-item{
+            margin-left: 3.5%;
+            padding-top:10px;
+            @include respond-to(medium-screens){
+                margin-left: 1%;
+                width:auto;
+                font-size: 14px;
+            }
+            @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+                margin-left: 1%;
+                width:auto;
+                font-size: 14px;  
+            }
+            
+        }
+        @include respond-to(medium-screens){
+            width:100vw;
+            justify-content: center;
+            margin-top:32px;
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1171px) {
+            width:100vw;
+            justify-content: center;
+            margin-top:32px;  
+        }
+        @include respond-to(handhelds){
+            width:100vw;
+            justify-content: center;
+            margin-top:40px;
+        }
+    }
+}
+
+
+
+
+

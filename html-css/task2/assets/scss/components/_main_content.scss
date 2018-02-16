@@ -1,0 +1,233 @@
+article{
+    background-color:#f3f1f2;
+    
+}
+.main_content{
+    padding:40px 13vw;
+    &-column_1, &-column_2{
+        display: inline;
+        height:100%;
+        width:calc((93%)/2);
+        float:left;
+        @include respond-to(medium-screens){
+            float:none;
+        }
+        @include respond-to(handhelds){
+            float:none;
+        }
+    }
+    &-column_2{
+        float:right;
+        @include respond-to(medium-screens){
+            float:none;
+        }
+        @include respond-to(handhelds){
+            float:none;
+        }
+    }
+    &-big_wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:3.5vh;
+        @include respond-to(handhelds){
+            display: block;
+           
+        }
+    }
+    
+    &-big_obj{
+        position: relative;
+        width:100%;
+        height:336px;
+        margin-bottom:3.5vh;
+        background-color: #fff;
+        border-radius:5px;
+        border-bottom: 1px solid #e2dee0;
+        &-posts{
+            @include centerer(false, true);
+            margin-left:2vw;
+            z-index: 2;
+        }
+        &-company{
+                font-size: 18px;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                line-height: 2.667;
+                text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
+                position: absolute;
+                bottom:-3%;
+                left:25%;
+                @include respond-to(handhelds){
+                    left:28%;
+                }
+               
+            }
+        &-3{
+            height:168px;
+            background-size: cover;
+            background-position:center;
+            background-image: url(../img/pictures/3.png);
+            border-bottom: 3px solid #1baf5d;
+            border-radius: 3px 3px 0 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        &-4{
+            height:168px;
+            background-size: cover;
+            background-position:center;
+            background-image: url(../img/pictures/4.png);
+            border-bottom: 3px solid #f19e1f;
+            position: relative;
+            z-index: 1;
+        }
+        
+        &-text{
+            &-img{
+                display: inline-block;
+                margin-left:2vw;
+                float:left;
+                margin-top: 8%;
+                @include respond-to(handhelds){
+                    margin-top:10.5%; 
+                }
+            }
+            &-review_wrapper{
+                display: inline-block;
+                float:left;
+                margin-top: 8%;
+                margin-left:2.5%;
+                width:72%;
+                @include respond-to(handhelds){
+                    margin-top:10.5%; 
+                }
+            }
+            &-person{
+                font-size: 16px;
+                color: rgb(86, 99, 117);
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 3;
+                margin-top: -3.7%;
+            }
+            &-review{
+                font-size: 14px;
+                color: rgb(86, 99, 117);
+                line-height: 1.429;
+                text-align: justify;
+                margin-top: -3.7%;
+                @include respond-to(handhelds){
+                    font-size:13px; 
+                }
+                &-link{
+                    color:#566375;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-bottom: 1px solid #d5d8dc;
+                }
+            }
+        }
+           
+        @include respond-to(handhelds){
+            /*display:none;*/  
+        }
+    }
+    
+    &-small_obj{  
+        position: relative;
+        width: calc(84%/2);
+        height: 336px;
+        background-color: #fff;
+        border-radius:5px;
+        border-bottom: 1px solid #e2dee0;
+        &-posts{
+            @include centerer(true, true);
+        }
+        &-text{
+            &-description{
+                color:#566375;
+                font-size: 15px;
+                margin:15% 7% 0;
+                text-align: center; 
+                font-weight: 600;
+                line-height: 1.286;          
+                &-1{
+                    margin:15% 14% 0;
+                }
+            }
+            
+            &-company{
+                font-weight: 600;
+                margin-top: 3%;
+                font-size: 13px;
+                color: rgb(27, 175, 93);
+                text-transform: uppercase;
+                line-height: 4;
+                text-align: center;
+                &-1{
+                    color:#f19e1f;
+                }
+                &-2{
+                    color: #88499c;
+                }
+            }
+        }
+        &-1{
+            height:168px;
+            background-size: cover;
+            background-position:center;
+            background-image: url(../img/pictures/1.png);
+            border-bottom: 3px solid #1baf5d;
+            &-11{
+                border-bottom: 3px solid #88499c;
+            }
+        }
+        &-2{
+            height:168px;
+            background-size: cover;
+            background-position:center;
+            background-image: url(../img/pictures/2.png);
+            border-bottom: 3px solid #f19e1f;
+        }
+        &-4{
+            height:168px;
+            background-size: cover;
+            background-position:center;
+            background-image: url(../img/pictures/2.png);
+            border-bottom: 3px solid #1baf5d;
+        }
+        &-5{
+            height:168px;
+            background-size: cover;
+            background-position:center;
+            background-image: url(../img/pictures/5.png);
+            border-bottom: 3px solid #1baf5d; 
+        }
+        @include respond-to(handhelds){
+            width:100%;
+            margin-bottom: 3.5vh; 
+        }
+    }
+}
+    
+.load_more{
+    text-align: center;
+    margin-top:-2%;
+    &-link, &-link:link &-link:visited{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2.667;
+        color: #566375;
+        text-decoration: none;
+        border-bottom: 1px solid #d5d8dc;;
+    }
+}
+.main_content_hr{
+    margin: 0 13vw;
+    color: #e2dee0;
+    background-color: #e2dee0;
+    height: 1px;
+    border:none;
+}
+

@@ -1,0 +1,38 @@
+.header-wrapper{
+    width: 100%;
+    height: 449px;
+    background-image: url('../img/background/back.gif');
+    background-size: cover;
+    background-position:center;
+    @include respond-to(handhelds){
+        height:300px;
+    }
+    @include respond-to(medium-screens){
+        height:370px;
+    }
+    &-text{
+        text-align: center;
+        padding-top:6%;
+        padding-bottom:1.2%;
+        color:white;
+        text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.15);
+        line-height: 1.6;
+        font-size: 30px;
+        @include respond-to(handhelds){
+            font-size: 26px;
+        }
+        @include respond-to(wide-screens){
+            padding-top:3%;
+        }
+    }
+    &-input{
+        margin-top:0.9%;
+    }
+    &-butt{
+        text-align: center;
+        margin-top:1%;
+        &-button{
+            line-height: 2.667;
+        }   
+    }
+}
