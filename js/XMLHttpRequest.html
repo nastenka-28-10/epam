@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+<head>
+   <title>
+       Books API
+   </title>
+   <meta charset="utf-8">
+</head>
+<body>
+    
+<script>
+    let date = '2018-03-01';
+    let apiKey = '45adec91163345c18cbff86d5e70bec8'
+    
+    let xhr = new XMLHttpRequest();
+    let params = 'published_date=' + date +
+  '&api-key=' + apiKey;
+
+xhr.open("GET", 'https://api.nytimes.com/svc/books/v3/lists/overview.json?' + params, true);
+
+let resultsJSON;
+
+xhr.onreadystatechange = function() {
+    
+  if (this.readyState != 4) return;
+
+  if (xhr.status === 200) {
+    //console.info( xhr.responseText ); // вывести результат
+      resultsJSON = xhr.responseText;
+      console.log(resultsJSON);
+      resultsJSON = JSON.parse(resultsJSON);
+      resultsJSON.results.lists.forEach(function(item, index, arr) {
+            document.write( `display_name: ${item.display_name}<br>books: ${item.books.length}<br>` );
+      });
+  } else {
+    console.error( `${xhr.status} ${xhr.statusText}`); // 401 Unauthorized
+  }
+
+}
+xhr.send();
+    
+
+
+</script>
+</body>  
+</html>
+
+
