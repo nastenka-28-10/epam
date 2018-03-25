@@ -1,0 +1,21 @@
+.table-sort{
+    font-family: sans-serif;
+    border-collapse:collapse;
+}
+
+td{
+    border:1px solid #dfdfdf;
+    padding:9px;
+}
+
+.first-line{
+    font-weight: bold;
+    background-image: linear-gradient(to top, #f0f0f0, #f6f6f6);
+}
+
+button{
+    border:none;
+    background-image: linear-gradient(to top, #f0f0f0, #f6f6f6);
+    display: block;
+    height:inherit;
+}
